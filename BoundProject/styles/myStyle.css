@@ -1,0 +1,557 @@
+﻿body {
+    font-family: 'Varela Round';
+    direction: rtl;
+    background-image: linear-gradient(#ececec, #fefefe);
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*תפריט במסך מלא*/
+.nav-design {
+    overflow: hidden;
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#101f32, #223d62);
+    font-size: 13pt;
+    text-align: center;
+    line-height: 420%;
+}
+
+#errows{
+    width:60px;
+    height:50px;
+}
+#errow{
+    margin-bottom:10px;
+}
+/*תפריט במצב מובייל*/
+.navclick-design {
+    text-align: center;
+    border-radius: 50px 50px;
+    min-height: 50vh;
+    padding: 10%;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    z-index: 99;
+    line-height: 380%;
+    top: 0;
+    right: 0;
+}
+
+/*העמוד בו נמצאים במערך*/
+.active {
+    background-color: #0b5394ff;
+    box-shadow: 0px 0px 44px -8px rgba(0,0,0,0.72);
+}
+
+/*הלוגו של המכון הטכנולוגי*/
+.hit {
+    margin-right:10%;
+    padding-top: 30px;
+    width: 30%;
+    height: 30%;
+}
+.YadLogo{
+    margin-right: 5%;
+    padding-top: 30px;
+    width: 30%;
+    height: 30%;
+}
+
+#tzevet {
+    padding-top:13px;
+    overflow: hidden;
+}
+
+#hitteacher {
+    float:right;
+    margin-right:17%;
+    text-align:center;
+}
+#Yad{
+    text-align:center;
+    margin-left:15%;
+    float:left;
+}
+#both #Names {
+    height: 55%;
+    width: 50%;
+    float: left;
+}
+
+#both2 #icons {
+    height: 18%;
+    width: 13%;
+    transform: translate(-70%,-30%);
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+.overlay {
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0b5394ff;
+}
+
+#both2:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family:Assistant;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#none{
+    display:none;
+}
+
+#PresentationForClass {
+    border: 2px solid;
+    padding: 5px;
+    box-shadow: 1px 1px 6px 1px;
+    width:940px;
+    height:618px;
+}
+#PresentationButton{
+    background-color: #0b5394ff;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin-top:10px;
+}
+#PresentationButton:hover {
+    color: #545b62;
+    background-color: lightgray;
+    border-color: lightgrey;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.62);
+}
+/*קישור לפקולטה לטכנולוגיות למידה*/
+.Telem {
+    color: black;
+    display: block;
+    padding-bottom: 12px;
+    text-align: right;
+}
+
+    .Telem:hover {
+        color: black;
+    }
+
+.OdOt {
+    font-size: 20px;
+    margin:0;
+}
+/*לוגו של יד ושם*/
+#logo {
+    width: 130px;
+    height: 90px;
+    display: inline;
+    vertical-align: sub;
+    padding: 5%;
+}
+/*תמונה של תפריט המבורגר*/
+#menu-img {
+    display: none;
+    width: 50px;
+}
+/*אייקון של איקס בתפריט*/
+#x {
+    display: none;
+    margin-left: 25px;
+    position: absolute;
+    width: 34px;
+    left: 0;
+}
+
+.D {
+    display: block;
+}
+
+.popupQuest {
+    text-align: right;
+}
+
+.showClass {
+    display: block;
+}
+
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        color: white;
+    }
+
+    .nav-link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-link:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+.tal {
+    color: green;
+}
+
+
+h1 {
+    font-size: 23pt;
+    padding-top: 27px;
+}
+
+h2 {
+    font-size: 21pt;
+}
+
+h3 {
+    font-size: 17pt;
+    display: inline;
+}
+
+hr {
+    display: inline-block;
+    background-image: linear-gradient(#101f32, #223d62);
+    width: 18%;
+    height: 7px;
+    margin-top: 3px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #13243a;
+    color: white;
+    border: 2px solid #e7e7e7;
+}
+
+    .btn:hover {
+        color: #545b62;
+        background-color: lightgray;
+        border-color: lightgrey;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.62);
+    }
+
+#player {
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-box-flex: 0;
+    display: block;
+}
+#tzevetMobile{
+    display:none;
+}
+
+@media only screen and (max-device-width : 1024px) {
+    .row, .col {
+        overflow: hidden!important;
+        width: 100%!important;
+    }
+       #none {
+        font-size: 25px;
+        font-family: Assistant;
+        display: block;
+        margin-right: 67px;
+    }
+    #both #Names {
+        float: none;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #tzevet {
+        padding-top: 13px;
+        overflow: hidden;
+    }
+    #tzevetMobile {
+        display: none;
+    }
+    #hitteacher {
+        font-size: 8pt;
+        float: right;
+        margin-right: 18%;
+        text-align: center;
+    }
+
+    #Yad {
+        font-size: 8pt;
+        text-align: center;
+        margin-left: 10%;
+        float: left;
+    }
+
+    #both2 #icons {
+        height: 10%;
+        width: 10%;
+        transform: translate(-60%);
+        clear: both;
+        margin-left: 55px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .overlay {
+        display:none;
+    }
+    #PresentationForClass {
+        border: 2px solid;
+        padding: 5px;
+        box-shadow: 1px 1px 6px 1px;
+        width: 700px;
+        height: 1100px;
+    }
+ 
+}
+@media only screen and (max-device-width : 800px) {
+    .row, .col {
+        overflow: hidden;
+        width: 100%;
+    }
+    #none {
+        font-size: 25px;
+        font-family: Assistant;
+        display: block;
+        margin-right: 22px;
+    }
+
+    #both #Names {
+        float: none;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #both2 #icons {
+        height: 10%;
+        width: 10%;
+        transform: translate(-60%);
+        clear: both;
+        margin-left: 55px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .overlay {
+        display: none;
+    }
+    #tzevet {
+        padding-top: 13px;
+        overflow: hidden;
+    }
+    #tzevetMobile {
+        display: none;
+    }
+    #hitteacher {
+        font-size: 8pt;
+        float: right;
+        margin-right: 15%;
+        text-align: center;
+    }
+    .YadLogo {
+        margin-right: 5%;
+        padding-top: 30px;
+        width: 25%;
+        height: 25%;
+    }
+    .hit {
+        margin-right: 10%;
+        padding-top: 30px;
+        width: 25%;
+        height: 25%;
+    }
+
+    #Yad {
+        font-size: 8pt;
+        text-align: center;
+        margin-left:9%;
+        float: left;
+    }
+    #PresentationForClass {
+        border: 2px solid;
+        padding: 5px;
+        box-shadow: 1px 1px 6px 1px;
+        width: 500px;
+        height: 800px;
+    }
+}
+
+@media only screen and (max-device-width : 440px) {
+    .row, .col {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #both #Names {
+        float: none;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #both2 #icons {
+        height: 10%;
+        width: 10%;
+        transform: translate(-60%);
+        clear: both;
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom:20px;
+        display: inline-block;
+    }
+    #PresentationForClass {
+        border: 2px solid;
+        padding: 5px;
+        box-shadow: 1px 1px 6px 1px;
+        width: 320px;
+        height: 450px;
+    }
+    #none {
+        font-size:18px;
+        font-family:Assistant;
+        display: block;
+        margin-right:7px;
+    }
+
+     .navDown {
+        margin-top: 50px;
+    }
+
+    .nav-design {
+        display: none;
+    }
+
+    #menu-img {
+        display: block;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .active {
+        background-color: #063a3c;
+        box-shadow: 0px 0px 44px -8px rgba(0,0,0,0.72);
+        width: 100%;
+        margin-right: 7.5px;
+    }
+
+    br {
+        display: block;
+    }
+    .hit {
+    margin-right:4%;
+    padding-top: 30px;
+    width: 22%;
+    height: 22%;
+}
+.YadLogo {
+    margin-right:25%;
+    padding-top: 30px;
+    width: 22%;
+    height: 22%;
+}
+    #with{
+        display:none;
+    }
+    #tzevet {
+        display: none;
+    }
+    #tzevetMobile{
+     text-align:right;
+     display:block;
+     padding-top:20px;
+    } 
+    h1 {
+        margin-top: -20px;
+        font-weight: bold;
+        font-size: 25pt;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 15pt;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    ul {
+        font-size: 10pt;
+    }
+
+    ol {
+        font-size: 12pt;
+    }
+
+    #col {
+        position: absolute;
+    }
+
+    #col2 {
+        margin-top: 70px;
+    }
+
+    .col-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        -webkit-box-flex: 0;
+    }
+
+    #player {
+        height: 250px;
+        width: 300px;
+    }
+
+     summary {
+        font-size: 21px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
