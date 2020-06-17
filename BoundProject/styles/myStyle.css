@@ -82,6 +82,18 @@
     width: 50%;
     float: left;
 }
+#none2{
+display:none;
+}
+#none {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Assistant;
+    display: block;
+    margin-right: 140px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
 
 #both2 #icons {
     height: 18%;
@@ -92,34 +104,6 @@
     margin-top: 40px;
     margin-bottom: -20px;
 }
-.overlay {
-    position: absolute;
-    height: 6%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #0b5394ff;
-}
-
-#both2:hover .overlay {
-    opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family:Assistant;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-#none{
-    display:none;
-}
 
 #PresentationForClass {
     border: 2px solid;
@@ -128,19 +112,7 @@
     width:940px;
     height:618px;
 }
-#PresentationButton{
-    background-color: #0b5394ff;
-    color: white;
-    text-align: center;
-    padding: 3px;
-    margin-top:10px;
-}
-#PresentationButton:hover {
-    color: #545b62;
-    background-color: lightgray;
-    border-color: lightgrey;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.62);
-}
+
 /*קישור לפקולטה לטכנולוגיות למידה*/
 .Telem {
     color: black;
@@ -258,9 +230,9 @@ hr {
 }
 
     .btn:hover {
-        color: #545b62;
-        background-color: lightgray;
-        border-color: lightgrey;
+        color: black;
+        background-color: #3d8af9;
+        border-color: #3d8af9;
         box-shadow: 2px 2px 2px rgba(0,0,0,0.62);
     }
 
@@ -280,11 +252,16 @@ hr {
         overflow: hidden!important;
         width: 100%!important;
     }
-       #none {
+    #none{
+        display:none;
+    }
+    #none2 {
         font-size: 25px;
         font-family: Assistant;
         display: block;
-        margin-right: 67px;
+        /*margin-right: 22px;*/
+        margin-left: 50px;
+        margin-right: 63px;
     }
     #both #Names {
         float: none;
@@ -334,6 +311,9 @@ hr {
         width: 700px;
         height: 1100px;
     }
+    #P1 {
+        display: none;
+    }
  
 }
 @media only screen and (max-device-width : 800px) {
@@ -342,10 +322,17 @@ hr {
         width: 100%;
     }
     #none {
-        font-size: 25px;
+        display: none;
+    }
+    #none2 {
+        font-size: 23px;
         font-family: Assistant;
         display: block;
-        margin-right: 22px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #P1 {
+        display: none;
     }
 
     #both #Names {
@@ -356,12 +343,13 @@ hr {
     }
 
     #both2 #icons {
-        height: 10%;
-        width: 10%;
+        background-color:white;
+        height: 8%;
+        width: 8%;
         transform: translate(-60%);
         clear: both;
-        margin-left: 55px;
-        margin-right: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 20px;
         display: inline-block;
@@ -426,11 +414,10 @@ hr {
     #both2 #icons {
         height: 10%;
         width: 10%;
-        transform: translate(-60%);
         clear: both;
-        margin-left: 20px;
-        margin-right: 30px;
-        margin-top: 10px;
+        margin-left: 25px;
+        margin-right: 18px;
+        margin-top: 5px;
         margin-bottom:20px;
         display: inline-block;
     }
@@ -441,11 +428,17 @@ hr {
         width: 320px;
         height: 450px;
     }
+
     #none {
-        font-size:18px;
-        font-family:Assistant;
+        display: none;
+    }
+
+    #none2 {
+        font-size: 15px;
+        font-family: Assistant;
         display: block;
-        margin-right:7px;
+        margin-left: 20px;
+        margin-right: 7px;
     }
 
      .navDown {
@@ -471,9 +464,10 @@ hr {
         margin-right: 7.5px;
     }
 
-    br {
-        display: block;
+    #P1{
+        display:none;
     }
+
     .hit {
     margin-right:4%;
     padding-top: 30px;
