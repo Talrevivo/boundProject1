@@ -50,40 +50,38 @@
 
 /*הלוגו של המכון הטכנולוגי*/
 .hit {
-    margin-right:10%;
-    padding-top: 30px;
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
+    padding-bottom:15px;
 }
-.YadLogo{
-    margin-right: 5%;
-    padding-top: 30px;
-    width: 30%;
-    height: 30%;
+.YadLogo {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
 }
-
-#tzevet {
-    padding-top:13px;
-    overflow: hidden;
-}
-
-#hitteacher {
-    float:right;
-    margin-right:17%;
-    text-align:center;
+h5{
+    margin-top:95px;
 }
 #Yad{
     text-align:center;
     margin-left:15%;
     float:left;
 }
-#both #Names {
-    height: 55%;
-    width: 50%;
-    float: left;
+.well1 {
+    margin-right: 10px;
+    padding-bottom:30px;
 }
-#none2{
-display:none;
+.well1 #Names{
+        float: left;
+        height:90%;
+        width:50%;
+    }
+.well2 {
+    display: inline;
+}
+
+#none2 {
+    display: none;
 }
 
 #none {
@@ -120,8 +118,13 @@ display:none;
     padding-bottom: 12px;
     text-align: right;
 }
-
     .Telem:hover {
+        color: black;
+    }
+#f8 {
+    color:black;
+}
+    #f8:hover {
         color: black;
     }
 
@@ -222,8 +225,8 @@ hr {
 }
 
 .btn {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #13243a;
     color: white;
     border: 2px solid #e7e7e7;
@@ -252,24 +255,23 @@ hr {
         overflow: hidden!important;
         width: 100%!important;
     }
-    #both #Names {
-        float: none;
+    #f8 {
+        color: black;
+    }
+        #f8:hover {
+            color: black;
+        }
+
+    .YadLogo {
+        padding-bottom: 15px;
+        width: 100%;
         height: 100%;
-        width: 90%;
-        margin-bottom: 20px;
     }
-    #tzevet {
-        padding-top: 13px;
-        overflow: hidden;
-    }
-    #tzevetMobile {
-        display: none;
-    }
-    #hitteacher {
-        font-size: 8pt;
-        float: right;
-        margin-right: 18%;
-        text-align: center;
+
+    .hit {
+        padding-bottom:15px;
+        width: 100%;
+        height: 100%;
     }
 
     #Yad {
@@ -288,13 +290,33 @@ hr {
     #P1 {
         display: none;
     }
+    .well1 {
+        margin-right: 10px;
+        padding-bottom: 50px;
+    }
+
+        .well1 #Names {
+            float: left;
+            height: 110%;
+            width: 50%;
+        }
  
 }
 @media only screen and (max-device-width : 800px) {
     .row, .col {
         overflow: hidden;
         width: 100%;
-    } 
+    }
+    #f8 {
+        color: black;
+    }
+    #see {
+        display: none;
+    }
+
+        #f8:hover {
+            color: black;
+        }
     h4{
         font-size:17px;
     }
@@ -306,36 +328,26 @@ hr {
         display: none;
     }
 
-    #both #Names {
-        float: none;
-        height: 100%;
-        width: 90%;
-        margin-bottom: 20px;
+    .well1{
+        padding-bottom: 50px;
     }
-    #tzevet {
-        padding-top: 13px;
-        overflow: hidden;
-    }
-    #tzevetMobile {
-        display: none;
-    }
-    #hitteacher {
-        font-size: 8pt;
-        float: right;
-        margin-right: 15%;
-        text-align: center;
-    }
+
+        .well1 #Names {
+            float: left;
+            height: 70%;
+            width: 46%;
+        }
+
     .YadLogo {
-        margin-right: 5%;
-        padding-top: 30px;
-        width: 25%;
-        height: 25%;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
     }
+
     .hit {
-        margin-right: 10%;
-        padding-top: 30px;
-        width: 25%;
-        height: 25%;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
     }
 
     #Yad {
@@ -358,13 +370,12 @@ hr {
         overflow: hidden;
         width: 100%;
     }
-
-    #both #Names {
-        float: none;
-        height: 100%;
-        width: 90%;
-        margin-bottom: 20px;
+    #f8 {
+        color: black;
     }
+        #f8:hover {
+            color: black;
+        }
 
     #icons {
         padding-top: 5px;
@@ -374,12 +385,28 @@ hr {
     h4{
         font-size:20px;
     }
-
+    h5 {
+        font-weight: bold;
+        margin: 0;
+    }
     .well {
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
+        margin-right: 30px;
     }
+    .well1 {
+        padding-bottom: 50px;
+        width:100%;
+    }
+        .well1 #Names {
+            margin-right: 60px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            float: none;
+            height: 35%;
+            width: 70%;
+        }
     #PresentationForClass {
         border: 2px solid;
         padding: 5px;
@@ -414,29 +441,17 @@ hr {
         display:none;
     }
 
+    .YadLogo {
+        padding-bottom: 15px;
+        width: 60%;
+        height: 60%;
+    }
+
     .hit {
-    margin-right:4%;
-    padding-top: 30px;
-    width: 22%;
-    height: 22%;
-}
-.YadLogo {
-    margin-right:25%;
-    padding-top: 30px;
-    width: 22%;
-    height: 22%;
-}
-    #with{
-        display:none;
+        padding-bottom: 15px;
+        width: 60%;
+        height: 60%;
     }
-    #tzevet {
-        display: none;
-    }
-    #tzevetMobile{
-     text-align:right;
-     display:block;
-     padding-top:20px;
-    } 
     h1 {
         margin-top: -20px;
         font-weight: bold;
